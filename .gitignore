@@ -1,0 +1,6 @@
+*.pem
+*.crt
+.env
+.DS_Store
+*.tmp
+*.bak

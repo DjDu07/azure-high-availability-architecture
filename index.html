@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Tienda de Cervezas Artesanales</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <div class="brand">
+          <div class="brand-logo">🍺</div>
+          <div class="brand-text">
+            <span class="brand-name">BeerBoost</span>
+            <span class="brand-subtitle">Cervezas Artesanales</span>
+          </div>
+        </div>
+        <div class="topbar-right">
+          <span class="cart-indicator">
+            Carrito: <strong id="cart-count">0</strong> ítems
+          </span>
+        </div>
+      </div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-inner">
+        <h1>Cervezas artesanales seleccionadas para ti</h1>
+        <p>
+          Descubre una selección curada de cervezas artesanales. Añade tus
+          favoritas al carrito, completa tus datos y confirma tu pedido en pocos
+          pasos.
+        </p>
+      </div>
+    </section>
+
+    <main class="container">
+      <section class="layout">
+        <!-- LISTA DE PRODUCTOS -->
+        <section class="productos">
+          <header class="section-header">
+            <h2>Nuestras cervezas</h2>
+            <p>
+              Elige la cantidad y haz clic en
+              <strong>“Añadir al carrito”</strong>.
+            </p>
+          </header>
+
+          <div class="productos-grid">
+            <!-- 1 - IPA Andina -->
+            <article
+              class="producto"
+              data-id="1"
+              data-nombre="IPA Andina"
+              data-precio="14.90"
+            >
+              <div class="producto-body">
+                <h3>IPA Andina</h3>
+                <p class="descripcion">
+                  Intensa y aromática, con notas cítricas y un amargor marcado
+                  al estilo West Coast.
+                </p>
+              </div>
+              <div class="producto-footer">
+                <span class="precio">S/ 14.90</span>
+                <div class="acciones">
+                  <label class="campo-cantidad">
+                    <span>Cant.</span>
+                    <input type="number" min="1" value="1" class="cantidad" />
+                  </label>
+                  <button class="btn btn-primary btn-agregar" type="button">
+                    Añadir
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 2 - Pale Ale Cusqueña -->
+            <article
+              class="producto"
+              data-id="2"
+              data-nombre="Pale Ale Cusqueña"
+              data-precio="12.50"
+            >
+              <div class="producto-body">
+                <h3>Pale Ale Cusqueña</h3>
+                <p class="descripcion">
+                  Equilibrada y refrescante, con notas florales y de caramelo
+                  ligero. Ideal para empezar.
+                </p>
+              </div>
+              <div class="producto-footer">
+                <span class="precio">S/ 12.50</span>
+                <div class="acciones">
+                  <label class="campo-cantidad">
+                    <span>Cant.</span>
+                    <input type="number" min="1" value="1" class="cantidad" />
+                  </label>
+                  <button class="btn btn-primary btn-agregar" type="button">
+                    Añadir
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 3 - Porter Limeña -->
+            <article
+              class="producto"
+              data-id="3"
+              data-nombre="Porter Limeña"
+              data-precio="15.90"
+            >
+              <div class="producto-body">
+                <h3>Porter Limeña</h3>
+                <p class="descripcion">
+                  Oscura y tostada, con notas a chocolate y café, cuerpo medio y
+                  final suave.
+                </p>
+              </div>
+              <div class="producto-footer">
+                <span class="precio">S/ 15.90</span>
+                <div class="acciones">
+                  <label class="campo-cantidad">
+                    <span>Cant.</span>
+                    <input type="number" min="1" value="1" class="cantidad" />
+                  </label>
+                  <button class="btn btn-primary btn-agregar" type="button">
+                    Añadir
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 4 - Wheat Beer del Valle -->
+            <article
+              class="producto"
+              data-id="4"
+              data-nombre="Wheat Beer del Valle"
+              data-precio="13.40"
+            >
+              <div class="producto-body">
+                <h3>Wheat Beer del Valle</h3>
+                <p class="descripcion">
+                  Cerveza de trigo suave, ligeramente turbia, con toques
+                  frutales y especiados.
+                </p>
+              </div>
+              <div class="producto-footer">
+                <span class="precio">S/ 13.40</span>
+                <div class="acciones">
+                  <label class="campo-cantidad">
+                    <span>Cant.</span>
+                    <input type="number" min="1" value="1" class="cantidad" />
+                  </label>
+                  <button class="btn btn-primary btn-agregar" type="button">
+                    Añadir
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 5 - Red Ale Arequipeña -->
+            <article
+              class="producto"
+              data-id="5"
+              data-nombre="Red Ale Arequipeña"
+              data-precio="13.90"
+            >
+              <div class="producto-body">
+                <h3>Red Ale Arequipeña</h3>
+                <p class="descripcion">
+                  Roja y maltosa, con notas acarameladas y tostadas, ideal para
+                  maridar con carnes.
+                </p>
+              </div>
+              <div class="producto-footer">
+                <span class="precio">S/ 13.90</span>
+                <div class="acciones">
+                  <label class="campo-cantidad">
+                    <span>Cant.</span>
+                    <input type="number" min="1" value="1" class="cantidad" />
+                  </label>
+                  <button class="btn btn-primary btn-agregar" type="button">
+                    Añadir
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 6 - Stout Barranco -->
+            <article
+              class="producto"
+              data-id="6"
+              data-nombre="Stout Barranco"
+              data-precio="16.50"
+            >
+              <div class="producto-body">
+                <h3>Stout Barranco</h3>
+                <p class="descripcion">
+                  Stout cremosa, con notas intensas de malta tostada, cacao y un
+                  final sedoso.
+                </p>
+              </div>
+              <div class="producto-footer">
+                <span class="precio">S/ 16.50</span>
+                <div class="acciones">
+                  <label class="campo-cantidad">
+                    <span>Cant.</span>
+                    <input type="number" min="1" value="1" class="cantidad" />
+                  </label>
+                  <button class="btn btn-primary btn-agregar" type="button">
+                    Añadir
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 7 - Lager Limeña -->
+            <article
+              class="producto"
+              data-id="7"
+              data-nombre="Lager Limeña"
+              data-precio="11.90"
+            >
+              <div class="producto-body">
+                <h3>Lager Limeña</h3>
+                <p class="descripcion">
+                  Lager clara, muy refrescante, de amargor suave y final limpio.
+                  Perfecta para el día a día.
+                </p>
+              </div>
+              <div class="producto-footer">
+                <span class="precio">S/ 11.90</span>
+                <div class="acciones">
+                  <label class="campo-cantidad">
+                    <span>Cant.</span>
+                    <input type="number" min="1" value="1" class="cantidad" />
+                  </label>
+                  <button class="btn btn-primary btn-agregar" type="button">
+                    Añadir
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 8 - Sour Maracuyá -->
+            <article
+              class="producto"
+              data-id="8"
+              data-nombre="Sour Maracuyá"
+              data-precio="14.50"
+            >
+              <div class="producto-body">
+                <h3>Sour Maracuyá</h3>
+                <p class="descripcion">
+                  Cerveza ácida con maracuyá, muy fresca, frutada y de alta
+                  tomabilidad.
+                </p>
+              </div>
+              <div class="producto-footer">
+                <span class="precio">S/ 14.50</span>
+                <div class="acciones">
+                  <label class="campo-cantidad">
+                    <span>Cant.</span>
+                    <input type="number" min="1" value="1" class="cantidad" />
+                  </label>
+                  <button class="btn btn-primary btn-agregar" type="button">
+                    Añadir
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 9 - Belgian Tripel Andina -->
+            <article
+              class="producto"
+              data-id="9"
+              data-nombre="Belgian Tripel Andina"
+              data-precio="18.90"
+            >
+              <div class="producto-body">
+                <h3>Belgian Tripel Andina</h3>
+                <p class="descripcion">
+                  Tripel belga de alta graduación, compleja, especiada y con
+                  final seco.
+                </p>
+              </div>
+              <div class="producto-footer">
+                <span class="precio">S/ 18.90</span>
+                <div class="acciones">
+                  <label class="campo-cantidad">
+                    <span>Cant.</span>
+                    <input type="number" min="1" value="1" class="cantidad" />
+                  </label>
+                  <button class="btn btn-primary btn-agregar" type="button">
+                    Añadir
+                  </button>
+                </div>
+              </div>
+            </article>
+
+            <!-- 10 - Session IPA Costa -->
+            <article
+              class="producto"
+              data-id="10"
+              data-nombre="Session IPA Costa"
+              data-precio="13.20"
+            >
+              <div class="producto-body">
+                <h3>Session IPA Costa</h3>
+                <p class="descripcion">
+                  IPA ligera en alcohol, muy aromática y fácil de beber, ideal
+                  para largas sesiones.
+                </p>
+              </div>
+              <div class="producto-footer">
+                <span class="precio">S/ 13.20</span>
+                <div class="acciones">
+                  <label class="campo-cantidad">
+                    <span>Cant.</span>
+                    <input type="number" min="1" value="1" class="cantidad" />
+                  </label>
+                  <button class="btn btn-primary btn-agregar" type="button">
+                    Añadir
+                  </button>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <!-- CARRITO -->
+        <aside class="carrito" aria-label="Carrito de compras">
+          <header class="section-header">
+            <h2>Carrito</h2>
+            <p>Revisa tus productos antes de continuar al pago.</p>
+          </header>
+
+          <div id="carrito-contenido" class="carrito-contenido">
+            <p class="carrito-vacio">Tu carrito está vacío.</p>
+          </div>
+
+          <footer class="carrito-footer">
+            <div class="carrito-total-row">
+              <span>Total</span>
+              <span id="carrito-total" class="carrito-total">S/ 0.00</span>
+            </div>
+            <div class="carrito-acciones">
+              <button
+                id="btn-vaciar"
+                class="btn btn-secondary"
+                type="button"
+                disabled
+              >
+                Vaciar carrito
+              </button>
+              <button
+                id="btn-checkout"
+                class="btn btn-primary btn-full"
+                type="button"
+                disabled
+              >
+                Proceder a la compra
+              </button>
+            </div>
+          </footer>
+        </aside>
+      </section>
+
+      <!-- CHECKOUT -->
+      <section id="checkout" class="checkout">
+        <header class="section-header">
+          <h2>Datos para completar tu pedido</h2>
+          <p>Todos los campos son obligatorios para confirmar el pedido.</p>
+        </header>
+
+        <form
+          id="form-pago"
+          class="form"
+          method="post"
+          action="procesar_pedido.php"
+        >
+          <!-- Campo oculto donde se enviará el carrito en JSON -->
+          <input type="hidden" id="cart-data" name="cart_data" />
+
+          <!-- Datos personales -->
+          <section class="grupo-form">
+            <h3>Datos personales</h3>
+            <div class="grid-form">
+              <label>
+                Nombre
+                <input type="text" name="nombre" required />
+              </label>
+              <label>
+                Apellidos
+                <input type="text" name="apellidos" required />
+              </label>
+              <label>
+                Email
+                <input type="email" name="email" required />
+              </label>
+              <label>
+                Teléfono
+                <input type="tel" name="telefono" required />
+              </label>
+            </div>
+          </section>
+
+          <!-- Dirección -->
+          <section class="grupo-form">
+            <h3>Dirección de entrega</h3>
+            <div class="grid-form">
+              <label>
+                Dirección
+                <input type="text" name="direccion" required />
+              </label>
+              <label>
+                Distrito
+                <input type="text" name="distrito" required />
+              </label>
+              <label>
+                Código Postal
+                <input type="text" name="codigo_postal" required />
+              </label>
+              <label>
+                Departamento
+                <input type="text" name="departamento" required />
+              </label>
+            </div>
+          </section>
+
+          <!-- Pago -->
+          <section class="grupo-form">
+            <h3>Información de pago</h3>
+            <div class="grid-form">
+              <label>
+                Número de Tarjeta
+                <input
+                  type="text"
+                  name="numero_tarjeta"
+                  inputmode="numeric"
+                  pattern="[0-9 ]{13,19}"
+                  placeholder="XXXX XXXX XXXX XXXX"
+                  required
+                />
+                <span class="nota">Demo: no se realiza ningún cobro real.</span>
+              </label>
+              <label>
+                Nombre en la Tarjeta
+                <input type="text" name="nombre_tarjeta" required />
+              </label>
+              <label>
+                Fecha de Expiración
+                <input type="month" name="expiracion" required />
+              </label>
+              <label>
+                CVV
+                <input
+                  type="text"
+                  name="cvv"
+                  inputmode="numeric"
+                  pattern="[0-9]{3,4}"
+                  required
+                />
+              </label>
+            </div>
+          </section>
+
+          <div class="acciones-form">
+            <button class="btn btn-primary btn-full" type="submit">
+              Confirmar pedido
+            </button>
+            <p class="texto-ayuda">
+              Al confirmar, registraremos tu pedido con los datos
+              proporcionados.
+            </p>
+          </div>
+
+          <div class="mensaje-exito" id="mensaje-exito">
+            <strong>¡Pedido confirmado!</strong>
+            <p>
+              Hemos registrado tu pedido correctamente. (Este sitio es solo un
+              ejemplo, no se ha procesado ningún pago real).
+            </p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        <span>© 2025 La Barrica · Sitio de demostración</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
